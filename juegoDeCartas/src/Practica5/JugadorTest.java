@@ -12,7 +12,7 @@ public class JugadorTest {
         Jugador jugador = new Jugador("Luis", cartas);
 
         assertEquals("Luis", jugador.nombre);
-        assertEquals(0, jugador.cartas.size());
+        assertEquals(0, jugador.getCartas().size());
     }
 
     @Test
@@ -23,8 +23,8 @@ public class JugadorTest {
         Carta carta = new Carta(Carta.Tipo.Picas, 5);
         jugador.recibirCarta(carta);
 
-        assertEquals(1, jugador.cartas.size());
-        assertTrue(jugador.cartas.contains(carta));
+        assertEquals(1, jugador.getCartas().size());
+        assertTrue(jugador.getCartas().contains(carta));
     }
 
     @Test
@@ -37,7 +37,7 @@ public class JugadorTest {
 
         jugador.deshacerseDeCarta(carta);
 
-        assertEquals(0, jugador.cartas.size());
+        assertEquals(0, jugador.getCartas().size());
     }
 
     @Test

@@ -61,10 +61,10 @@ public class Juego {
 
         System.out.println(mazo.mazoHecho(5));
 
-        Carta carta = jugador1.cartas.get(0);
+        Carta carta = jugador1.getCartas().get(0);
         mazo.agregarCartas(jugador1.deshacerseDeCarta(carta));
 
-        Carta cartas = jugador1.cartas.get(1);
+        Carta cartas = jugador1.getCartas().get(1);
         mazo.agregarCartas(jugador1.deshacerseDeCarta(cartas));
 
         System.out.println("Cartas de " + jugador1.nombre + " despues de devolver:");

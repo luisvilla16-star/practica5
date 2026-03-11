@@ -23,7 +23,7 @@ public class Jugador {
     /**
      * Lista de cartas que posee el jugador (mano).
      */
-    public ArrayList<Carta> cartas;
+    private ArrayList<Carta> cartas;
 
     /**
      * Constructor de la clase Practica5.Jugador.
@@ -36,13 +36,23 @@ public class Jugador {
         this.cartas = cartas;
     }
 
+    public ArrayList<Carta> getCartas() {
+        return cartas;
+    }
+
+    public void setCartas(ArrayList<Carta> cartas) {
+        this.cartas = cartas;
+    }
+
     /**
      * Agrega una carta a la mano del jugador.
      *
      * @param carta carta que recibirá el jugador
      */
     public void recibirCarta(Carta carta) {
-        cartas.add(carta);
+        if (cartas != null && carta != null) {
+            cartas.add(carta);
+        }
     }
 
     /**
