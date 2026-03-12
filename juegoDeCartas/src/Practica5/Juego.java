@@ -35,9 +35,9 @@ public class Juego {
         System.out.println(mazo.mazoHecho(5));
 
         System.out.println("Barajeando mazo...");
-        mazo.barajear();
+        mazo.barajar();
 
-        System.out.println("Mostrando las primeras 5 cartas del mazo despues de barajeadas");
+        System.out.println("Mostrando las primeras 5 cartas del mazo despues de barajar");
         System.out.println(mazo.mazoHecho(5));
 
         System.out.println("Creado 3 jugadores");

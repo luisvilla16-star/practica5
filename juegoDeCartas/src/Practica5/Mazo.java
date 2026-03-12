@@ -24,14 +24,14 @@ public class Mazo {
      * Inicializa el mazo automáticamente al crearse.
      */
     public Mazo() {
-        Inicializar();
+        inicializar();
     }
 
     /**
      * Inicializa el mazo con 52 cartas.
      * Se crean cartas para cada tipo (palo) y valor (1 a 13).
      */
-    public void Inicializar() {
+    public void inicializar() {
         cartas = new ArrayList<>();
 
         for (Carta.Tipo tipo : Carta.Tipo.values()) {
@@ -48,13 +48,13 @@ public class Mazo {
      */
     public void configuracionInicial() {
         cartas.clear();
-        Inicializar();
+        inicializar();
     }
 
     /**
      * Barajea el mazo de cartas de forma aleatoria.
      */
-    public void barajear() {
+    public void barajar() {
         Collections.shuffle(cartas);
     }
 

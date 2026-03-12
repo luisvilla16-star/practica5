@@ -10,8 +10,6 @@ import java.util.*;
  * This is a modification of the general purpose Canvas, specially made for
  * the BlueJ "shapes" example. 
  *
- * @author: Bruce Quig
- * @author: Michael Kölling (mik)
  *
  * @version 2016.02.29
  */
@@ -120,7 +118,7 @@ public class Canvas
 
     /**
      * Set the foreground color of the Canvas.
-     * @param  newColor   the new color for the foreground of the Canvas 
+     * @param  colorString  the new color for the foreground of the Canvas
      */
     public void setForegroundColor(String colorString)
     {

@@ -16,7 +16,7 @@ public class MazoTest {
     @Test
     public void testBarajear() {
         Mazo mazo = new Mazo();
-        mazo.barajear();
+        mazo.barajar();
 
         assertEquals(52, mazo.cartas.size());
     }
